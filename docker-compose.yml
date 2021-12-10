@@ -1,0 +1,9 @@
+services:
+  ipstack:
+    image: ipstack
+    build: .
+    restart: unless-stopped
+    ports:
+      - '5001:5001'
+    expose:
+      - '5001'
